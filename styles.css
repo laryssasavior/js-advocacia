@@ -1,0 +1,112 @@
+/* Estilo Geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    background-color: #111;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+.btn {
+    background-color: #d4af37;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c29c2c;
+}
+
+/* Efeitos parallax no banner */
+.banner-parallax {
+    height: 400px;
+    background-image: url('banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 50px;
+}
+
+/* Formulário */
+.contact-section {
+    padding: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #d4af37;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}

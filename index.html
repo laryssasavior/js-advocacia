@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="dark-theme">
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Cível</a></li>
+                        <li><a href="#">Trabalhista</a></li>
+                        <li><a href="#">Penal</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Banner com Parallax -->
+        <section class="banner-parallax">
+            <div class="text-container">
+                <h1>Defesa com Excelência</h1>
+                <p>Advogados especialistas em diversas áreas</p>
+                <button class="btn">Saiba Mais</button>
+            </div>
+        </section>
+
+        <!-- API de Mapa -->
+        <section class="map-container">
+            <h2>Nossa Localização</h2>
+            <div id="globe"></div> <!-- Globo interativo aqui -->
+        </section>
+
+        <!-- Sessão com Texto e Imagens -->
+        <article class="info-section">
+            <div class="info-text">
+                <h2>Soluções Jurídicas Personalizadas</h2>
+                <p>Nosso escritório oferece atendimento especializado...</p>
+                <button class="btn-whatsapp">Fale Conosco via WhatsApp</button>
+            </div>
+            <div class="image-gallery">
+                <img src="img1.jpg" alt="Imagem 1">
+                <img src="img2.jpg" alt="Imagem 2">
+                <img src="img3.jpg" alt="Imagem 3">
+            </div>
+        </article>
+
+        <!-- Notícias -->
+        <aside class="news-section">
+            <h3>Últimas Defesas</h3>
+            <p>Acompanhe os casos recentes em que atuamos...</p>
+            <!-- Inserir notícias aqui -->
+        </aside>
+
+        <!-- Excelência -->
+        <section class="excellence-section">
+            <h2>Excelência em Atendimento</h2>
+            <p>Nosso compromisso é oferecer um serviço de qualidade...</p>
+        </section>
+
+        <!-- Testemunhos com Comentários do Google -->
+        <section class="testimonials">
+            <h2>O que nossos clientes dizem</h2>
+            <div id="google-reviews"></div> <!-- API de Comentários do Google -->
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="contact-section">
+            <h2>Contato</h2>
+            <form id="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-column">
+            <h4>Escritório</h4>
+            <p>Endereço: Rua X, Brasília, DF</p>
+        </div>
+        <div class="footer-column">
+            <h4>Contato</h4>
+            <p>Email: contato@advocacia.com</p>
+            <p>Telefone: (61) 9999-9999</p>
+        </div>
+    </footer>
+
+    <!-- Botão de troca de tema -->
+    <button id="theme-toggle">Alterar Tema</button>
+</body>
+</html>
